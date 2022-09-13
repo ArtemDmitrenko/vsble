@@ -1,0 +1,27 @@
+.success-update-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  margin-top: -18px;
+  margin-bottom: 40px;
+  background: #f1edf7;
+  border-radius: 8px;
+
+  &__text {
+    color: #282828;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__checkmark {
+    display: flex;
+    margin-right: 14px;
+
+    & svg path {
+      fill: #8562ce;
+    }
+  }
+}

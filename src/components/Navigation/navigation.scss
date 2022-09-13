@@ -1,0 +1,54 @@
+.navigation {
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    color: #505050;
+    transition: var(--transition);
+
+    &:hover {
+      color: #000;
+
+      & path {
+        fill: #000;
+      }
+    }
+
+    &_active {
+      color: #000;
+
+      & path {
+        fill: #000;
+      }
+    }
+  }
+
+  &__link-favourites {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    color: #505050;
+    transition: var(--transition);
+
+    &:hover {
+      color: #000;
+
+      & path {
+        stroke: #000;
+      }
+    }
+
+    &_active {
+      color: #000;
+
+      & path {
+        stroke: #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.avatar {
+  position: relative;
+  cursor: pointer;
+
+  &_small {
+    width: 46px;
+    height: 46px;
+  }
+
+  &_big {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__hover {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: var(--transition);
+
+    & svg {
+      position: absolute;
+      bottom: 5px;
+      left: 7.6%;
+
+      &:hover path {
+        opacity: 1;
+        transition: var(--transition);
+      }
+    }
+  }
+
+  &:hover {
+    & .avatar__hover {
+      opacity: 1;
+    }
+  }
+
+  &__edit-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 40%;
+    height: 20%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    background: none;
+    border: none;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    height: 100%;
+
+    &_big {
+      padding: 4%;
+      // border: 1px solid #000;
+    }
+
+    &_small {
+      padding: 4%;
+    }
+  }
+
+  &__empty-circle {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 91%;
+    height: 91%;
+    background-color: black;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(50%);
+    transition: var(--transition);
+  }
+
+  &__empty-border {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover .avatar__empty-circle {
+      background-color: #8562ce;
+      transition: var(--transition);
+    }
+
+    & svg {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(50%);
+    }
+  }
+
+  &__empty-border-small {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+
+  &__empty-name {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  &_no-edit {
+    cursor: auto;
+  }
+}

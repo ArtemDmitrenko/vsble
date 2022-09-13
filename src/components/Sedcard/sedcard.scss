@@ -1,0 +1,203 @@
+.sedcard {
+  &__tab-index {
+    margin-left: 8px;
+    color: #c3c3c3;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__tab-title {
+    display: inline;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__gallery-item-image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__tablist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    color: #999;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    border: none;
+  }
+
+  &__tab {
+    padding-bottom: 8px;
+    outline-offset: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition);
+
+    &:hover {
+      color: #000;
+
+      .sedcard__tab-index {
+        color: #808080;
+      }
+    }
+
+    &_selected {
+      padding-bottom: 8px;
+      color: #000;
+
+      .sedcard__tab-index {
+        color: #808080;
+      }
+
+      .sedcard__tab-title {
+        position: relative;
+        padding-bottom: 8px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+
+        &::before {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 4px;
+          background: #000;
+          border-radius: 4px;
+          content: '';
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  &__images-amount {
+    color: #808080;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__gallery-item {
+    position: relative;
+  }
+
+  &__cover {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background: #8562ce;
+    border-radius: 8px;
+    // pointer-events: none;
+  }
+
+  &__cover-near-sedcard {
+    position: absolute;
+    left: 24px;
+    top: 8px;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background: #8562ce;
+    border-radius: 8px;
+  }
+
+  &__gallery-item-link {
+    &:hover {
+      & .sedcard__gallery-item-image {
+        filter: contrast(60%);
+      }
+    }
+  }
+
+  &__button-sedcard-container {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__button-make-cover {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  &__button-add-to-sedcard {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  &__sedcard-sign {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #000000;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 8px 16px 8px 36px;
+
+    &::before {
+      position: absolute;
+      top: 25%;
+      left: 14px;
+      width: 15px;
+      height: 16px;
+      background: url('../../assets/img/checkbox-mark.svg') no-repeat center
+        center;
+      content: '';
+    }
+  }
+
+  &__sedcard-addition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+
+  .my-masonry-grid {
+    display: flex;
+    width: auto;
+    margin-left: -16px;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 16px; /* gutter size */
+    background-clip: padding-box;
+  }
+
+  /* Style your items */
+  .my-masonry-grid_column > div {
+    /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,117 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable length-zero-no-unit */
+.profile-header-menu {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      path {
+        stroke: #000;
+      }
+
+      .avatar__image_small {
+        border: 1px solid #000;
+      }
+    }
+  }
+
+  &__chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: var(--transition);
+
+    &_opened {
+      transform: rotate(180deg);
+      transition: var(--transition);
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 216px;
+    margin-top: 5px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 41px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+
+    &_active {
+      z-index: 2;
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__menu-header {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #505050;
+  }
+
+  &__menu-main {
+    padding-top: 14px;
+    border-bottom: 1px solid #505050;
+  }
+
+  &__menu-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__menu-subtitle {
+    color: #808080;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__menu-link {
+    color: #808080;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__menu-item {
+    margin-bottom: 14px;
+  }
+
+  &__menu-button {
+    color: #808080;
+    font-size: 14px;
+    font-family: Sora, sans-serif;
+    line-height: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__menu-footer {
+    margin-top: 14px;
+  }
+}

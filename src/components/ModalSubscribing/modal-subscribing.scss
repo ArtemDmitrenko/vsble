@@ -1,0 +1,54 @@
+.subscribing-modal {
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 62px 16px 56px;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__image {
+    width: 74px;
+    height: 74px;
+    background: url("../../assets/img/union.svg") no-repeat center center;
+    background-size: contain;
+  }
+
+  &__title {
+    width: 110%;
+    margin-top: 26px;
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    color: #282828;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 176px;
+
+    & button {
+      width: 100%;
+    }
+  }
+}

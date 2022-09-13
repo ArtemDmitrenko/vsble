@@ -1,0 +1,45 @@
+.payment-gateway-form {
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__button {
+    margin-top: 24px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    color: #282828;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__stripe {
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__description {
+    color: #282828;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__message {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-height: 56px;
+    padding-left: 16px;
+    background: #f7f7f7;
+    border-radius: 16px;
+  }
+}

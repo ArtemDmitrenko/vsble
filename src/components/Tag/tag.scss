@@ -1,0 +1,26 @@
+.tag {
+  padding: 0 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #808080;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Sora, sans-serif;
+  line-height: 20px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    color: black;
+    border: 1px solid black;
+  }
+
+  &:active {
+    color: white;
+    background: black;
+    border: 1px solid transparent;
+  }
+}

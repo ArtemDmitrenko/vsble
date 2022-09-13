@@ -1,0 +1,23 @@
+variables:
+  PROJECT: "vsble"
+  PRJ_PATH: "/var/www/vsble/dev"
+
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+  - echo "Building React.js app for $PROJECT"
+  - cp -f $PRJ_PATH/shared/.env $PWD
+  - /usr/bin/yarn
+  - /usr/bin/yarn run build || true
+#  - /usr/bin/yarn
+#  - /usr/bin/yarn run build
+#  - /usr/bin/pm2 delete vsble || true
+#  - /usr/bin/yarn workspace @site/renderer-entrypoint build
+#  - /usr/bin/pm2 start "/usr/bin/yarn workspace @site/renderer-entrypoint start" --name vsble
+  - curl --request POST --form "repo=$CI_PROJECT_PATH" "https://dev-tt-bot.yode.pro/githookhandler.php"
+  - echo "Build successful"
+  only:
+    - dev

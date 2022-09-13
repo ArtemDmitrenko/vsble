@@ -1,0 +1,49 @@
+.gallery-block {
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filter-fields {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &_opened {
+      max-height: 205px;
+      padding-top: 44px;
+      overflow: visible;
+    }
+  }
+
+  &__cards {
+    margin-top: 40px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  &__title-artbuyer {
+    margin-top: 56px;
+  }
+
+  &__big-search {
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    pointer-events: none;
+
+    &_active {
+      height: auto;
+      max-height: 80px;
+      margin-bottom: 56px;
+      transition: var(--transition);
+      pointer-events: all;
+    }
+  }
+}

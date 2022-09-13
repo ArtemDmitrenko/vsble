@@ -1,0 +1,45 @@
+.marketplace-form {
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__double-item {
+    display: flex;
+  }
+
+  &__double-item-half1 {
+    width: 50%;
+    margin-right: 8px;
+  }
+
+  &__double-item-half2 {
+    width: 50%;
+  }
+
+  &__button {
+    margin-top: 24px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    color: #282828;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

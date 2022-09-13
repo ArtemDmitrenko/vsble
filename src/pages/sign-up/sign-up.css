@@ -1,0 +1,11 @@
+.sign-up-block {
+  flex: 1 0 auto;
+}
+
+.sign-up-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 30px;
+}

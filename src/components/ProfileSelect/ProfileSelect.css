@@ -1,0 +1,28 @@
+.profileSelectLabel {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.profileSelectInput {
+    border: none;
+    background-color: #F7F7F7;
+    height: 2.75rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: #505050;
+    font-family: 'Sora', sans-serif;
+}
+
+.profileSelectInput::placeholder {
+    color: #505050;
+    font-size: 14px;
+    font-family: 'Sora', sans-serif;
+    padding-left: 0.5rem;
+}
+
+.profileSelectInput option {
+    font-size: 14px;
+    color: #505050;
+    font-family: 'Sora', sans-serif;
+    padding-left: 0.5rem;
+}

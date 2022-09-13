@@ -1,0 +1,26 @@
+.custom404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./../../assets/img/page-404.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+
+  &__card {
+    max-width: 1200px;
+    margin: 0 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    /* stylelint-disable-next-line color-hex-alpha */
+    background-color: #0000007f;
+    border-radius: 20px;
+  }
+
+  &__link {
+    color: #8562ce;
+    text-transform: uppercase;
+  }
+}

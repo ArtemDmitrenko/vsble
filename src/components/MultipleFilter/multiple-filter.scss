@@ -1,0 +1,46 @@
+.multiple-filter {
+  display: flex;
+  flex-basis: 25%;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  &__field {
+    flex-basis: 25%;
+    max-width: 272px;
+  }
+
+  &__followers {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__followers-limit {
+    width: 100%;
+
+    & input {
+      appearance: textfield;
+
+      &::-webkit-inner-spin-button {
+        appearance: none;
+      }
+
+      &::-webkit-outer-spin-button {
+        appearance: none;
+      }
+    }
+  }
+
+  &__line {
+    display: flex;
+    justify-content: center;
+    min-width: 32px;
+    line-height: 44px;
+  }
+
+  &__apply {
+    display: flex;
+    flex-grow: 1;
+    align-self: end;
+    justify-content: flex-end;
+  }
+}

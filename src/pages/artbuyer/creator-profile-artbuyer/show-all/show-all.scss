@@ -1,0 +1,22 @@
+.show-all {
+  &__main {
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  &__name {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  &__sedcard {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+}

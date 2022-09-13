@@ -1,0 +1,7 @@
+{
+  "ecsstractor_port.bem_nesting": true,
+  "ecsstractor_port.attributes": "className",
+  "ecsstractor_port.add_comment": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

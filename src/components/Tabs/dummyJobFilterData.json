@@ -1,0 +1,8 @@
+[
+  { "text": "All", "value": "all" },
+  { "text": "Photographer", "value": "photo" },
+  { "text": "Model", "value": "model" },
+  { "text": "MakeUp Artist", "value": "makeUp" },
+  { "text": "Stylist", "value": "style" },
+  { "text": "Illustrator", "value": "illustration" }
+]

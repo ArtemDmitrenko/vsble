@@ -1,0 +1,14 @@
+[
+    {
+        "name": "About Me",
+        "href": "about"
+    },
+    {
+        "name": "Social Links",
+        "href": "social"
+    },
+    {
+        "name": "Skills",
+        "href": "skill"
+    }
+]

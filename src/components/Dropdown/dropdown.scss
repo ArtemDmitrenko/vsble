@@ -1,0 +1,117 @@
+.custom {
+  &__control {
+    box-sizing: border-box !important;
+    height: 44px !important;
+    background-color: #f7f7f7 !important;
+    border: 1px solid transparent !important;
+    border-radius: 0.5rem !important;
+    cursor: pointer !important;
+
+    &--is-focused {
+      background-color: white !important;
+      border: 1px solid #ebebeb !important;
+    }
+
+    &:hover {
+      border: 1px solid #ebebeb !important;
+
+      & .custom__placeholder {
+        color: black !important;
+      }
+    }
+  }
+
+  &__indicator-separator {
+    display: none;
+  }
+
+  &__placeholder {
+    color: #808080 !important;
+    font-weight: 400;
+    font-size: 14px !important;
+    font-family: "Sora", sans-serif !important;
+  }
+
+  &__value-container {
+    padding: 2px 16px !important;
+  }
+
+  &__menu {
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
+    padding: 8px !important;
+    background-color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 41px rgba(0, 0, 0, 0.1) !important;
+
+    & button {
+      margin: 10px 0px 10px 10px;
+    }
+  }
+
+  &__option {
+    cursor: pointer !important;
+    font-weight: 400 !important;
+
+    &--is-focused {
+      color: #8562ce !important;
+      background-color: white !important;
+    }
+
+    &--is-selected {
+      color: black !important;
+      background-color: white !important;
+      font-weight: 600 !important;
+
+      &:hover {
+        color: #8562ce !important;
+      }
+    }
+  }
+
+  &__control {
+    svg {
+      transition: var(--transition);
+    }
+
+    &--menu-is-open {
+      .custom__indicator {
+        color: black;
+        transition: var(--transition);
+
+        svg {
+          transform: rotate(180deg);
+          transition: var(--transition);
+        }
+      }
+    }
+  }
+
+  &__label {
+    // margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+
+    & .custom__control {
+      margin-top: 8px;
+    }
+
+    &_disabled {
+      color: #808080;
+      cursor: auto;
+    }
+  }
+
+  &__value-container {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #000000 !important;
+  }
+
+  &__single-value--is-disabled {
+    color: #c3c3c3 !important;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Basic Information",
+    "href": "basicInfo"
+  },
+  {
+    "name": "Password",
+    "href": "password"
+  },
+  {
+    "name": "Connect Payment Gateway",
+    "href": "connectPaymentGateway"
+  },
+  {
+    "name": "Marketplace",
+    "href": "marketplace"
+  },
+  {
+    "name": "Notification Settings",
+    "href": "notificationSettings"
+  },
+  {
+    "name": "Sales Statements",
+    "href": "salesStatements"
+  }
+]

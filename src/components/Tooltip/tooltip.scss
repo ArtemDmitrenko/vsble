@@ -1,0 +1,166 @@
+.tooltip {
+  position: relative;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  justify-content: center;
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // width: 16.5px;
+    // height: 16.5px;
+    color: #999;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    background: #fff;
+    border: 1.5px solid #999;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 2px;
+      background-color: #999;
+      border-radius: 50%;
+      top: 2.5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 2px;
+      height: 4px;
+      background-color: #999;
+      border-radius: 1px;
+      top: 6.5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:hover,
+    &:focus {
+      color: #505050;
+      border-color: #505050;
+      outline: none;
+      &::before {
+        background-color: #505050;
+      }
+      &::after {
+        background-color: #505050;
+      }
+    }
+
+    &_disabled {
+      color: #999;
+      pointer-events: none;
+    }
+  }
+
+  &__block {
+    position: absolute;
+    z-index: 100;
+    width: max-content;
+    max-width: 200px;
+    padding: 16px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background: #3c3c3c;
+    border-radius: 8px;
+
+    &_arrow-position {
+      &_bottom {
+        bottom: 35px;
+        left: 8px;
+        transform: translateX(-50%);
+
+        &::before {
+          position: absolute;
+          bottom: -14px;
+          left: 50%;
+          width: 22px;
+          height: 12px;
+          transform: rotate(180deg) translateX(50%);
+          content: url('../../assets/img/triangle.svg');
+        }
+      }
+
+      &_top {
+        top: 35px;
+        left: 8px;
+        transform: translateX(-50%);
+
+        &::before {
+          position: absolute;
+          top: -14px;
+          left: 50%;
+          width: 22px;
+          height: 12px;
+          transform: translateX(-50%);
+          content: url('../../assets/img/triangle.svg');
+        }
+      }
+
+      &_left {
+        top: 8px;
+        transform: translateX(-109%) translateY(-50%);
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: -19px;
+          height: 12px;
+          transform: rotate(90deg) translateX(-30%);
+          content: url('../../assets/img/triangle.svg');
+        }
+      }
+
+      &_right {
+        top: 8px;
+        transform: translateX(19%) translateY(-50%);
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: -19px;
+          height: 12px;
+          transform: rotate(-90deg) translateX(27%);
+          content: url('../../assets/img/triangle.svg');
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__text {
+    color: #ebebeb;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.temp {
+  margin-left: 400px;
+}

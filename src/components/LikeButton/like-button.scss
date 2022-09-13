@@ -1,0 +1,30 @@
+.like-button {
+  &__clicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 44px;
+    padding: 12px 20px 12px 10px;
+    color: white;
+    font-family: Sora, sans-serif;
+    background: #8562ce;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover {
+      background: #7557b5;
+    }
+  }
+
+  &__solid-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}

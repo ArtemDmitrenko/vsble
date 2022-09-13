@@ -1,0 +1,50 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  /* stylelint-disable-next-line alpha-value-notation */
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+  pointer-events: none;
+
+  &__content {
+    width: 41vw;
+    max-width: 560px;
+    max-height: 95vh;
+    padding: 1.5rem;
+    overflow: auto;
+    background-color: white;
+    border-radius: 1.5rem;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      width: 0; /* for vertical scrollbars */
+      height: 0; /* for horizontal scrollbars */
+    }
+
+    &::-moz-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    &_active {
+      transform: scale(1);
+    }
+  }
+
+  &_active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

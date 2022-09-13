@@ -1,0 +1,53 @@
+.price-info {
+  // .price-info__prices
+  &__prices {
+  }
+
+  // .price-info__price-item
+  &__price-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .price-info__radio-button
+  &__radio-button {
+    margin-right: 5px;
+  }
+
+  // .price-info__tooltip
+  &__tooltip {
+    padding-bottom: 3px;
+  }
+
+  // .price-info__price-block
+  &__price-block {
+    flex-grow: 1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  // .price-info__button
+  &__button {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    & button {
+      width: 100%;
+    }
+  }
+
+  // .price-info__description
+  &__description {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

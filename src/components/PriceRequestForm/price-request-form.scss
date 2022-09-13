@@ -1,0 +1,49 @@
+.price-request-form {
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    color: #808080;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__button {
+    margin-top: 24px;
+
+    & button {
+      width: 100%;
+    }
+  }
+
+  &__budget {
+    max-width: 232px;
+
+    & input {
+      padding-right: 40px;
+      appearance: textfield;
+
+      &:hover {
+        padding-right: 40px;
+      }
+
+      &:focus {
+        padding-right: 40px;
+
+        &:hover {
+          padding-right: 40px;
+        }
+      }
+
+      &::-webkit-inner-spin-button {
+        appearance: none;
+      }
+
+      &::-webkit-outer-spin-button {
+        appearance: none;
+      }
+    }
+  }
+}

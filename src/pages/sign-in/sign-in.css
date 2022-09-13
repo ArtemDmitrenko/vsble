@@ -1,0 +1,11 @@
+.sign-in-block {
+  flex: 1 0 auto;
+}
+
+.sign-in-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 40px;
+}
